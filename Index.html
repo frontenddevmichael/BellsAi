@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bells AI - Your Campus Assistant</title>
+    <meta name="description"
+        content="Bells AI provides instant answers to student queries about academics, departments, events, and campus life through an intuitive chat interface.">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <script src="/Script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+            
+                <div class="logo-text">
+                    <h1>Bells<span class="ai-badge">AI</span></h1>
+                </div>
+            </div>
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="icon-btn" aria-label="Help Center" title="Help Center">
+                    <i class="fas fa-question-circle"></i>
+                </button>
+                <button class="icon-btn menu-toggle" aria-label="Toggle Menu" title="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+
+        <ul class="sidebar-menu">
+            <li class="menu-item active">
+                <i class="fas fa-comments"></i>
+                <span>Chat Assistant</span>
+            </li>
+            <li class="menu-item">
+                <i class="fas fa-university"></i>
+                <span>Departments</span>
+            </li>
+            <li class="menu-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Events</span>
+            </li>
+            <li class="menu-item">
+                <i class="fas fa-book-open"></i>
+                <span>Academics</span>
+            </li>
+            <li class="menu-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Campus Map</span>
+            </li>
+            <li class="menu-item">
+                <i class="fas fa-clock"></i>
+                <span>Office Hours</span>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <div class="help-card">
+                <i class="fas fa-info-circle"></i>
+                <p>Need human assistance?</p>
+                <a href="#contact" class="contact-link">Contact Support</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Chat Container -->
+    <main class="chat-container">
+        <!-- Welcome Section -->
+        <div class="welcome-section" id="welcome-section">
+            <div class="welcome-hero">
+                <div class="hero-icon">
+                    <img src="logo.png" alt="">
+                </div>
+                <h1 class="hero-title">Welcome to Bells AI</h1>
+                <p class="hero-subtitle">Your intelligent campus assistant for instant answers about academics,
+                    departments, events, and campus life.</p>
+            </div>
+
+            <div class="query-categories">
+                <h2 class="section-title">What can I help you with today?</h2>
+
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon academics">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h3>Academics</h3>
+                        <p>Course info, registration, schedules, exam dates</p>
+                        <ul class="example-queries">
+                            <li>"When does registration open?"</li>
+                            <li>"Show me CS department courses"</li>
+                            <li>"What's the exam schedule?"</li>
+                        </ul>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon departments">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Departments</h3>
+                        <p>Faculty info, office locations, contact details</p>
+                        <ul class="example-queries">
+                            <li>"Where is the Engineering dept?"</li>
+                            <li>"Contact admissions office"</li>
+                            <li>"List all departments"</li>
+                        </ul>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon campus">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Campus Life</h3>
+                        <p>Facilities, services, dining, transportation</p>
+                        <ul class="example-queries">
+                            <li>"Library opening hours?"</li>
+                            <li>"Where is the cafeteria?"</li>
+                            <li>"Campus shuttle schedule"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popular Questions -->
+            <div class="popular-questions">
+                <h2 class="section-title">Popular Questions</h2>
+                <div class="questions-grid">
+                    <button class="question-btn">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>What's the academic calendar for this semester?</span>
+                    </button>
+                    <button class="question-btn">
+                        <i class="fas fa-door-open"></i>
+                        <span>Where is the registrar's office located?</span>
+                    </button>
+                    <button class="question-btn">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>How do I contact my academic advisor?</span>
+                    </button>
+                    <button class="question-btn">
+                        <i class="fas fa-wifi"></i>
+                        <span>How do I connect to campus WiFi?</span>
+                    </button>
+                    <button class="question-btn">
+                        <i class="fas fa-id-card"></i>
+                        <span>How can I get a student ID card?</span>
+                    </button>
+                    <button class="question-btn">
+                        <i class="fas fa-laptop"></i>
+                        <span>Are computer labs available on weekends?</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Features Highlight -->
+            <div class="features-highlight">
+                <div class="feature-item">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Instant Responses</h4>
+                    <p>Get immediate answers to your campus queries</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>24/7 Availability</h4>
+                    <p>Available round-the-clock for student support</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-university"></i>
+                    <h4>Multi-Campus Ready</h4>
+                    <p>Scalable across multiple institutions</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Secure & Private</h4>
+                    <p>Your conversations are confidential</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Messages Area (Hidden initially, will be shown when user starts chatting) -->
+        <div class="chat-messages hidden" id="chat-messages">
+            <!-- Example conversation for demonstration -->
+            <div class="message-group user-group">
+                <div class="message user-message">
+                    <div class="message-content">
+                        When does the library close today?
+                    </div>
+                    <div class="message-time">2:45 PM</div>
+                </div>
+            </div>
+
+            <div class="message-group assistant-group">
+                <div class="assistant-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message assistant-message">
+                    <div class="message-content">
+                        <p>The Main Library is open until <strong>10:00 PM</strong> today (Monday).</p>
+                        <div class="info-card">
+                            <h4><i class="fas fa-book"></i> Main Library Hours</h4>
+                            <ul>
+                                <li><strong>Mon-Thu:</strong> 7:00 AM - 10:00 PM</li>
+                                <li><strong>Fri:</strong> 7:00 AM - 6:00 PM</li>
+                                <li><strong>Sat-Sun:</strong> 9:00 AM - 5:00 PM</li>
+                            </ul>
+                        </div>
+                        <p class="helpful-note"><i class="fas fa-lightbulb"></i> The 24-hour study room is always
+                            available!</p>
+                    </div>
+                    <div class="message-time">2:45 PM</div>
+                </div>
+            </div>
+
+            <div class="message-group user-group">
+                <div class="message user-message">
+                    <div class="message-content">
+                        What events are happening this week?
+                    </div>
+                    <div class="message-time">2:47 PM</div>
+                </div>
+            </div>
+
+            <div class="message-group assistant-group">
+                <div class="assistant-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message assistant-message">
+                    <div class="message-content">
+                        <p>Here are the upcoming events this week:</p>
+                        <div class="info-card">
+                            <h4><i class="fas fa-calendar-alt"></i> This Week's Events</h4>
+                            <ul>
+                                <li><strong>Tuesday, 3:00 PM:</strong> Tech Career Fair - Student Center</li>
+                                <li><strong>Wednesday, 6:00 PM:</strong> AI & Machine Learning Workshop - Lab 204</li>
+                                <li><strong>Thursday, 2:00 PM:</strong> Student Council Meeting - Building A</li>
+                                <li><strong>Friday, 7:00 PM:</strong> Jazz Night - Campus Auditorium</li>
+                            </ul>
+                        </div>
+                        <p class="helpful-note"><i class="fas fa-lightbulb"></i> You can register for these events at
+                            the student portal!</p>
+                    </div>
+                    <div class="message-time">2:47 PM</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typing Indicator (Hidden by default) -->
+        <div class="typing-indicator hidden" id="typing-indicator">
+            <div class="typing-dots">
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+            </div>
+            <span class="typing-text">Bells AI is thinking...</span>
+        </div>
+
+        <!-- Chat Input Form -->
+        <form class="chat-input" id="chat-form">
+            <div class="input-container">
+                <button type="button" class="input-action-btn" title="Attach file" aria-label="Attach file">
+                    <i class="fas fa-paperclip"></i>
+                </button>
+                <input type="text" id="user-input"
+                    placeholder="Ask about courses, events, departments, campus facilities..." autocomplete="off"
+                    aria-label="Type your message" />
+                <button type="button" class="input-action-btn" title="Voice input" aria-label="Voice input">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <button type="submit" class="send-btn" title="Send message" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="input-footer">
+                <span class="input-hint">
+                    <i class="fas fa-info-circle"></i>
+                    Try asking: "What events are happening this week?" or "Where is the CS department?"
+                </span>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Bells AI</h4>
+                <p>Intelligent campus assistant providing instant answers to students about academics, departments,
+                    events, and campus life.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#institutions">For Institutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#help">Help Center</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#feedback">Send Feedback</a></li>
+                    <li><a href="#documentation">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#facebook" aria-label="Facebook" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#twitter" aria-label="Twitter" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#instagram" aria-label="Instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#linkedin" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bells AI. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a
+                    href="#terms">Terms of Service</a></p>
+            <p class="footer-badge"> Built by miky :]
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
